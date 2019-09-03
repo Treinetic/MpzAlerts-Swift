@@ -26,7 +26,7 @@ extension MpzAlerts {
             return view
         }
         
-        override func build() {
+        override public func build() {
             titleLabel.text = self.title
             messageLabel.text = self.message
             imageView.image = self.image

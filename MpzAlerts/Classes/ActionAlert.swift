@@ -23,7 +23,7 @@ extension MpzAlerts {
             return view
         }
         
-        override func build() {
+        override public func build() {
             titleLabel.text = self.title
             messageLabel.text = self.message
             titleLabel.font = self.configs.titleFont

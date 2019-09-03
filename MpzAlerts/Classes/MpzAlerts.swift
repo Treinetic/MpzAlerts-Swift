@@ -150,14 +150,14 @@ open class MpzAlerts : UIView {
         SwiftEntryKit.display(entry: self.view!, using: ekAttributes)
     }
     
-    func hide() {
+    public func hide() {
         SwiftEntryKit.dismiss()
         if let tg = alertTag {
             shownAlerts[tg] = false
         }
     }
     
-    func build() {
+    public func build() {
         
     }
 
