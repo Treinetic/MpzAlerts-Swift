@@ -31,7 +31,7 @@ extension MpzAlerts {
             let _ = STDAlert().setTitle(title).setMessage(message).addButton(button, handler: handler).show()
         }
         
-        override public func build() {
+        override open func build() {
             titleLabel.text = self.title
             messageLabel.text = self.message
             titleLabel.font = self.configs.titleFont

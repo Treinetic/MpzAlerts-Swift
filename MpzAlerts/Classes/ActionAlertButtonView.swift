@@ -38,7 +38,7 @@ class ActionAlertButtonView : UIView {
         addSubview(view)
     }
     
-    public func build() -> ActionAlertButtonView {
+    open func build() -> ActionAlertButtonView {
         if let img = self.alertButton.image {
             self.image.image = img
         }else{

@@ -83,28 +83,28 @@ open class MpzAlerts : UIView {
         return UIView()
     }
     
-    public func setTitle(_ text : String) -> MpzAlerts {
+    open func setTitle(_ text : String) -> MpzAlerts {
         self.title = text
         return self
     }
     
-    public func setMessage(_ text : String) -> MpzAlerts {
+    open func setMessage(_ text : String) -> MpzAlerts {
         self.message = text
         return self
     }
     
-    public func setTag(_ text : String) -> MpzAlerts {
+    open func setTag(_ text : String) -> MpzAlerts {
         self.alertTag = text
         return self
     }
     
-    public func setImage(_ image : UIImage) -> MpzAlerts {
+    open func setImage(_ image : UIImage) -> MpzAlerts {
         self.image = image
         return self
     }
     
     
-    public func addButton(_ text : String, color : UIColor? = nil, type: ButtonType? = nil,
+    open func addButton(_ text : String, color : UIColor? = nil, type: ButtonType? = nil,
                           image: UIImage? = nil, handler: (() -> Void)?) -> MpzAlerts {
         let btn = MpzAlerts.AlertButton.init(text: text,
                                              image: image,
@@ -121,7 +121,7 @@ open class MpzAlerts : UIView {
         return self
     }
     
-    public func show() {
+    open func show() {
         self.build()
         var ekAttributes = EKAttributes()
         switch configs.position {
@@ -150,14 +150,14 @@ open class MpzAlerts : UIView {
         SwiftEntryKit.display(entry: self.view!, using: ekAttributes)
     }
     
-    public func hide() {
+    open func hide() {
         SwiftEntryKit.dismiss()
         if let tg = alertTag {
             shownAlerts[tg] = false
         }
     }
     
-    public func build() {
+    open func build() {
         
     }
 

@@ -29,7 +29,7 @@ extension MpzAlerts {
 
         
         
-        public func getButton() -> UIButton {
+        open func getButton() -> UIButton {
             let button = UIButton()
             button.setTitle(self.text, for: .normal)
             button.layer.cornerRadius = config.buttonCornerRadius

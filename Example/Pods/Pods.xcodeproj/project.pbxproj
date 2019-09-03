@@ -88,7 +88,6 @@
 		BF13F2043DDFA47CFF4959F728E0C4E5 /* ActionAlertButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405206FEB6B829E85DCC86E508949D01 /* ActionAlertButtonView.xib */; };
 		C2110105A25651D7C5DDEF2A125E1E85 /* ActionAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E256E2F0D0D9FA31FE46CF07DF9E84DB /* ActionAlertView.xib */; };
 		C324FB46338875241B99A67E3529ACEE /* EKXStatusBarMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE39609DD2D8F0FFC1FD5E8FFC5A4A /* EKXStatusBarMessageView.swift */; };
-		C4F3E60064688506FD1D75E018EBC456 /* AbstractAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DE3B3359D65735C42127B942E25A8D /* AbstractAlertView.swift */; };
 		C7D648AFB4129D28326C9254C0AC4D02 /* EKAccessoryNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E1DDAB5E89470C4235F7A79C4160E /* EKAccessoryNoteMessageView.swift */; };
 		C803395A49B950F12142344BF7647726 /* EKNotificationMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2326A7F483479301CC44878EFBB06F /* EKNotificationMessageView.swift */; };
 		C869DD90BD12ABE03EBB15A44A2B5BCB /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2874A7672B8E0ECD2E64AF23FAD8A9B6 /* UIView+Utils.swift */; };
@@ -269,7 +268,6 @@
 		E7C8A6B00C31CF35A71D6557A04EAC61 /* EKStyleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EKStyleView.swift; path = Source/Infra/EKStyleView.swift; sourceTree = "<group>"; };
 		E80FB0A55056F225352E2F9D3D0D4069 /* EKEntryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EKEntryView.swift; path = Source/Infra/EKEntryView.swift; sourceTree = "<group>"; };
 		EB9E2292FD77FD189A1A57B611495A72 /* EKAttributes+Presets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EKAttributes+Presets.swift"; path = "Source/Model/EntryAttributes/EKAttributes+Presets.swift"; sourceTree = "<group>"; };
-		F3DE3B3359D65735C42127B942E25A8D /* AbstractAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractAlertView.swift; path = MpzAlerts/Classes/AbstractAlertView.swift; sourceTree = "<group>"; };
 		F57D4E9DC760FC099A962C1AD9B2D1A7 /* SwiftEntryKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftEntryKit.modulemap; sourceTree = "<group>"; };
 		F627A80CDE450191C70148C537A1C4D7 /* ResourceBundle-MpzAlerts-MpzAlerts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MpzAlerts-MpzAlerts-Info.plist"; sourceTree = "<group>"; };
 		F968984F2A6121204CFF85E0296292F4 /* EKAttributes+PositionConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EKAttributes+PositionConstraints.swift"; path = "Source/Model/EntryAttributes/EKAttributes+PositionConstraints.swift"; sourceTree = "<group>"; };
@@ -442,7 +440,6 @@
 		924949D67731BA3A56032C4D8FB566AC /* MpzAlerts */ = {
 			isa = PBXGroup;
 			children = (
-				F3DE3B3359D65735C42127B942E25A8D /* AbstractAlertView.swift */,
 				6B37F0692E176632DC0EF847682D7C39 /* ActionAlertButtonView.swift */,
 				9AEB067EA9BF7A88C4B3656C608F913C /* ActionAlert.swift */,
 				7F4D10FEA736D383208888E1778E2E4E /* ActionButton.swift */,
@@ -887,7 +884,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F3E60064688506FD1D75E018EBC456 /* AbstractAlertView.swift in Sources */,
 				54A1117C43DD230EF945E5A1E37E9BE1 /* ActionAlertButtonView.swift in Sources */,
 				360335BEFCAECF6FD32D5E9C001FF258 /* ActionAlert.swift in Sources */,
 				8A41903152E73FDFBC215BD6DFBFA761 /* ActionButton.swift in Sources */,
