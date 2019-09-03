@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MpzAlerts_Example' do
+  pod 'MpzAlerts', :path => '../'
+
+  target 'MpzAlerts_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
