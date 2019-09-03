@@ -24,23 +24,23 @@ open class MpzAlerts : UIView {
         case right
     }
     
-    public class Configs {
+    public struct Configs {
         
-        public var primaryColor : UIColor = .red
-        public var secondaryColor : UIColor = .blue
-        public var titleColor : UIColor = .black
-        public var bodyTextColor : UIColor = .gray
+        public var primaryColor : UIColor = UIColor(red:0.16, green:0.48, blue:0.78, alpha:1.0)
+        public var secondaryColor : UIColor = UIColor(red:0.46, green:0.45, blue:0.45, alpha:1.0)
+        public var titleColor : UIColor = UIColor(red:0.16, green:0.16, blue:0.16, alpha:1.0)
+        public var messageColor : UIColor = UIColor(red:0.45, green:0.45, blue:0.45, alpha:1.0)
         public var backgroundColor : UIColor = .white
-        public var dimColor : UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
-        public var cornerRadius = CGFloat(10)
+        public var dimColor : UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
+        public var cornerRadius = CGFloat(0)
         public var buttonFont = UIFont.systemFont(ofSize: 15, weight: .bold)
-        public var titleFont = UIFont.systemFont(ofSize: 17, weight: .bold)
+        public var titleFont = UIFont.systemFont(ofSize: 18, weight: .bold)
         public var messageFont = UIFont.systemFont(ofSize: 15, weight: .regular)
         public var buttonCornerRadius = CGFloat(22)
         public var position : Position = .center
         public var buttonPosition: Position = .right
         public var actionAlertButtonPosition: Position = .center
-        public var padding = CGFloat(0)
+        public var padding = CGFloat(20)
         public var maxWidth = CGFloat(400)
         public var tapToHide = true
         
@@ -109,7 +109,7 @@ open class MpzAlerts : UIView {
         let btn = MpzAlerts.AlertButton.init(text: text,
                                              image: image,
                                              buttonType: type ?? .text,
-                                             color: color ?? configs.secondaryColor,
+                                             color: color ?? configs.primaryColor,
                                              configs: configs,
                                              handler: {
                                                 self.hide()
@@ -159,6 +159,24 @@ open class MpzAlerts : UIView {
     
     open func build() {
         
+    }
+    
+    
+    open func buildTitleLabel(label : UILabel) {
+        label.text = self.title
+        label.font = self.configs.titleFont
+        label.textColor = self.configs.titleColor
+    }
+    
+    open func buildMessageLabel(label : UILabel) {
+        label.text = self.message
+        label.font = self.configs.messageFont
+        label.textColor = self.configs.messageColor
+    }
+    
+    open func buildContainer(view : UIView) {
+        view.layer.cornerRadius = self.configs.cornerRadius
+        view.backgroundColor = self.configs.backgroundColor
     }
 
     

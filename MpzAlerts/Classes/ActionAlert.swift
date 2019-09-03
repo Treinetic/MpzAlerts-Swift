@@ -13,6 +13,7 @@ import SwiftEntryKit
 extension MpzAlerts {
     open class ActionAlert : MpzAlerts {
         
+        @IBOutlet weak var container: UIView!
         @IBOutlet weak var titleLabel: UILabel!
         @IBOutlet weak var messageLabel: UILabel!
         @IBOutlet weak var buttonStack: UIStackView!
@@ -24,10 +25,9 @@ extension MpzAlerts {
         }
         
         override open func build() {
-            titleLabel.text = self.title
-            messageLabel.text = self.message
-            titleLabel.font = self.configs.titleFont
-            messageLabel.font = self.configs.messageFont
+            buildContainer(view: self.container)
+            buildTitleLabel(label: self.titleLabel)
+            buildMessageLabel(label: self.messageLabel)
             buttonStack.subviews.forEach({$0.removeFromSuperview()})
             for button in buttons {
                 let b = ActionAlertButtonView.init(fromAlertButton: button)

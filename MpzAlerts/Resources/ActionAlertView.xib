@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionAlert">
             <connections>
                 <outlet property="buttonStack" destination="1xp-NK-2t2" id="jjg-w0-zc6"/>
+                <outlet property="container" destination="oi7-TY-1wW" id="WxA-kr-Cew"/>
                 <outlet property="messageLabel" destination="pLx-Z9-iTh" id="Yh6-Lb-fbO"/>
                 <outlet property="titleLabel" destination="MGS-gC-djF" id="e06-ZK-MUM"/>
             </connections>

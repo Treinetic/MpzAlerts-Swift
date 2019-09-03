@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        MpzAlerts.Configs.defaultConfigs.tapToHide = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,14 +30,16 @@ class ViewController: UIViewController {
         .show()
     }
     @IBAction func actionAlert(_ sender: Any) {
-        MpzAlerts.Configs.defaultConfigs.position = getPosition()
-        MpzAlerts.ActionAlert()
+      
+        let al = MpzAlerts.ActionAlert()
         .setTitle("title")
         .setMessage("Dispose of any resources that can be recreated")
         .addButton("print", handler: {})
-            .addButton("No print", handler: {})
-            .addButton("No image", image: nil, handler: {})
-            .show()
+        .addButton("No print", handler: {})
+        .addButton("No image", image: nil, handler: {})
+        al.configs.tapToHide = true
+        al.show()
+        
     }
     @IBAction func imageAlert(_ sender: Any) {
         MpzAlerts.Configs.defaultConfigs.position = getPosition()

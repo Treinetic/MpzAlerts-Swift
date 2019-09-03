@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageAlert" customModule="MpzAlerts" customModuleProvider="target">
             <connections>
                 <outlet property="buttonStack" destination="ytb-mk-YtV" id="1qc-4l-m0e"/>
+                <outlet property="container" destination="gYb-Sy-7ai" id="wL9-wR-Ms5"/>
                 <outlet property="imageView" destination="aOQ-3i-Vcc" id="cBe-96-mff"/>
                 <outlet property="messageLabel" destination="qsK-1Y-jYd" id="iSd-Kp-hXq"/>
                 <outlet property="titleLabel" destination="Z67-js-QQ4" id="O0s-vL-JaA"/>

@@ -15,6 +15,7 @@ extension MpzAlerts {
         @IBOutlet weak var titleLabel: UILabel!
         @IBOutlet weak var messageLabel: UILabel!
         @IBOutlet weak var buttonStack: UIStackView!
+        @IBOutlet weak var container: UIView!
         
    
         @IBOutlet weak var containerRightCon: NSLayoutConstraint!
@@ -32,10 +33,9 @@ extension MpzAlerts {
         }
         
         override open func build() {
-            titleLabel.text = self.title
-            messageLabel.text = self.message
-            titleLabel.font = self.configs.titleFont
-            messageLabel.font = self.configs.messageFont
+            buildContainer(view: self.container)
+            buildTitleLabel(label: self.titleLabel)
+            buildMessageLabel(label: self.messageLabel)
             buttonStack.subviews.forEach({$0.removeFromSuperview()})
             for button in buttons {
                 let b = button.getButton()

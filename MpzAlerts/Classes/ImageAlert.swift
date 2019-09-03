@@ -15,6 +15,7 @@ extension MpzAlerts {
     
     open class ImageAlert : MpzAlerts {
         
+        @IBOutlet weak var container: UIView!
         @IBOutlet weak var imageView: UIImageView!
         @IBOutlet weak var titleLabel: UILabel!
         @IBOutlet weak var messageLabel: UILabel!
@@ -27,11 +28,12 @@ extension MpzAlerts {
         }
         
         override open func build() {
-            titleLabel.text = self.title
-            messageLabel.text = self.message
+            buildContainer(view: self.container)
+            buildTitleLabel(label: self.titleLabel)
+            buildMessageLabel(label: self.messageLabel)
+            
             imageView.image = self.image
-            titleLabel.font = self.configs.titleFont
-            messageLabel.font = self.configs.messageFont
+
             buttonStack.subviews.forEach({$0.removeFromSuperview()})
             for button in buttons {
                 let b = ActionAlertButtonView.init(fromAlertButton: button)
