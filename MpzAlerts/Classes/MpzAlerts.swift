@@ -33,6 +33,10 @@ open class MpzAlerts : UIView {
         public var backgroundColor : UIColor = .white
         public var dimColor : UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
         public var cornerRadius = CGFloat(0)
+        public var titleAlign : NSTextAlignment = .left
+        public var actionAlertTitleAlign : NSTextAlignment = .center
+        public var actionAlertMessageAlign : NSTextAlignment = .center
+        public var messageAlign : NSTextAlignment = .left
         public var buttonFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         public var titleFont = UIFont.systemFont(ofSize: 18, weight: .bold)
         public var messageFont = UIFont.systemFont(ofSize: 15, weight: .regular)
@@ -43,7 +47,13 @@ open class MpzAlerts : UIView {
         public var padding = CGFloat(20)
         public var maxWidth = CGFloat(400)
         public var tapToHide = true
-        
+        public var entranceAnimation : EKAttributes.Animation = .init( translate: .none,
+                                                                       scale: .init(from: 0.5, to: 1, duration: 0.2),
+                                                                       fade: .init(from: 0, to: 1, duration: 0.1))
+        public var exitAnimation : EKAttributes.Animation = .init( translate: .none,
+                                                                   scale: .init(from: 1, to: 0.5, duration: 0.2),
+                                                                   fade: .init(from: 1, to: 0, duration: 0.2))
+
         public static var defaultConfigs = Configs()
     }
     
@@ -147,6 +157,8 @@ open class MpzAlerts : UIView {
             )
         }
         ekAttributes.positionConstraints.safeArea = .overridden
+        ekAttributes.entranceAnimation = self.configs.entranceAnimation
+        ekAttributes.exitAnimation = self.configs.exitAnimation
         SwiftEntryKit.display(entry: self.view!, using: ekAttributes)
     }
     
@@ -166,12 +178,14 @@ open class MpzAlerts : UIView {
         label.text = self.title
         label.font = self.configs.titleFont
         label.textColor = self.configs.titleColor
+        label.textAlignment = self.configs.titleAlign
     }
     
     open func buildMessageLabel(label : UILabel) {
         label.text = self.message
         label.font = self.configs.messageFont
         label.textColor = self.configs.messageColor
+        label.textAlignment = self.configs.messageAlign
     }
     
     open func buildContainer(view : UIView) {
