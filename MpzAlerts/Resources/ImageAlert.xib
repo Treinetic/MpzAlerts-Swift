@@ -28,19 +28,19 @@
                     <rect key="frame" x="0.0" y="0.0" width="419" height="259"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Update aviable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z67-js-QQ4">
-                            <rect key="frame" x="12" y="96" width="395" height="23"/>
+                            <rect key="frame" x="12" y="112" width="395" height="23"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e503" translatesAutoresizingMaskIntoConstraints="NO" id="aOQ-3i-Vcc">
-                            <rect key="frame" x="8" y="8" width="403" height="80"/>
+                            <rect key="frame" x="8" y="16" width="403" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="T2b-lv-C8l"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our servers are currently undermaintain." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-1Y-jYd">
-                            <rect key="frame" x="12" y="127" width="395" height="19.5"/>
+                            <rect key="frame" x="12" y="151" width="395" height="19.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -56,13 +56,13 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="qsK-1Y-jYd" secondAttribute="trailing" constant="12" id="1ig-ON-B4b"/>
                         <constraint firstItem="85n-Of-d85" firstAttribute="bottom" secondItem="ytb-mk-YtV" secondAttribute="bottom" constant="16" id="5Dq-u9-yT3"/>
-                        <constraint firstItem="aOQ-3i-Vcc" firstAttribute="top" secondItem="85n-Of-d85" secondAttribute="top" constant="8" id="ACc-ep-51x"/>
+                        <constraint firstItem="aOQ-3i-Vcc" firstAttribute="top" secondItem="85n-Of-d85" secondAttribute="top" constant="16" id="ACc-ep-51x"/>
                         <constraint firstItem="ytb-mk-YtV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qsK-1Y-jYd" secondAttribute="bottom" constant="8" id="F9P-Df-UYm"/>
-                        <constraint firstItem="qsK-1Y-jYd" firstAttribute="top" secondItem="Z67-js-QQ4" secondAttribute="bottom" constant="8" id="K4s-4P-D7i"/>
+                        <constraint firstItem="qsK-1Y-jYd" firstAttribute="top" secondItem="Z67-js-QQ4" secondAttribute="bottom" constant="16" id="K4s-4P-D7i"/>
                         <constraint firstItem="Z67-js-QQ4" firstAttribute="leading" secondItem="gYb-Sy-7ai" secondAttribute="leading" constant="12" id="Md6-EW-2kB"/>
                         <constraint firstItem="aOQ-3i-Vcc" firstAttribute="leading" secondItem="gYb-Sy-7ai" secondAttribute="leading" constant="8" id="Nhv-v3-XU4"/>
                         <constraint firstAttribute="trailing" secondItem="aOQ-3i-Vcc" secondAttribute="trailing" constant="8" id="TRq-P1-93C"/>
-                        <constraint firstItem="Z67-js-QQ4" firstAttribute="top" secondItem="aOQ-3i-Vcc" secondAttribute="bottom" constant="8" id="U8A-cG-49h"/>
+                        <constraint firstItem="Z67-js-QQ4" firstAttribute="top" secondItem="aOQ-3i-Vcc" secondAttribute="bottom" constant="16" id="U8A-cG-49h"/>
                         <constraint firstAttribute="trailing" secondItem="ytb-mk-YtV" secondAttribute="trailing" constant="8" id="ZNG-cE-EHE"/>
                         <constraint firstAttribute="trailing" secondItem="Z67-js-QQ4" secondAttribute="trailing" constant="12" id="fEe-Mm-CqE"/>
                         <constraint firstItem="qsK-1Y-jYd" firstAttribute="leading" secondItem="gYb-Sy-7ai" secondAttribute="leading" constant="12" id="gdF-bt-NQj"/>
