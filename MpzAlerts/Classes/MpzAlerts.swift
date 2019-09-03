@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import SwiftEntryKit
-public class MpzAlerts : UIView {
+open class MpzAlerts : UIView {
     
  
     public enum ButtonType {
@@ -66,7 +66,7 @@ public class MpzAlerts : UIView {
         _viewSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         _viewSetup()
     }

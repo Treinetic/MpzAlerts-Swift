@@ -13,7 +13,7 @@ import QuickLayout
 
 extension MpzAlerts {
     
-    public class ImageAlert : MpzAlerts {
+    open class ImageAlert : MpzAlerts {
         
         @IBOutlet weak var imageView: UIImageView!
         @IBOutlet weak var titleLabel: UILabel!

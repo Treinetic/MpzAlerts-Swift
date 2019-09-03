@@ -10,7 +10,7 @@ import UIKit
 import SwiftEntryKit
 
 extension MpzAlerts {
-    public class STDAlert : MpzAlerts {
+    open class STDAlert : MpzAlerts {
         
         @IBOutlet weak var titleLabel: UILabel!
         @IBOutlet weak var messageLabel: UILabel!

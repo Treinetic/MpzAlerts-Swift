@@ -10,22 +10,8 @@
 import UIKit
 import SwiftEntryKit
 
-//class ActionAlertButton {
-//    var view : UIView!
-//
-//    init(text: String, icon: UIImage, color: UIColor, handler: (() -> ())?) {
-//        let actionButton = ActionAlertButtonView()
-//        actionButton.text.text = text
-//        actionButton.image.image = icon
-//        actionButton.handler = handler
-//        view = actionButton
-//    }
-//
-//}
-//
-
 extension MpzAlerts {
-    public class ActionAlert : MpzAlerts {
+    open class ActionAlert : MpzAlerts {
         
         @IBOutlet weak var titleLabel: UILabel!
         @IBOutlet weak var messageLabel: UILabel!
