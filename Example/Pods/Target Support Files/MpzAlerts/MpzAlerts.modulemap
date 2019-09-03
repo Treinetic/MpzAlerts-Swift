@@ -1,0 +1,6 @@
+framework module MpzAlerts {
+  umbrella header "MpzAlerts-umbrella.h"
+
+  export *
+  module * { export * }
+}

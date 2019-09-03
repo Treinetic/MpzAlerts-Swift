@@ -1,0 +1,6 @@
+framework module Pods_MpzAlerts_Example {
+  umbrella header "Pods-MpzAlerts_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

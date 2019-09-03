@@ -1,0 +1,35 @@
+{
+  "name": "MpzAlerts",
+  "version": "0.1.0",
+  "summary": "A short description of MpzAlerts.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mapalagama93/MpzAlerts",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mapalagama93": "dev.hasitha@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mapalagama93/MpzAlerts.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MpzAlerts/Classes/**/*",
+  "resource_bundles": {
+    "MpzAlerts": [
+      "MpzAlerts/Assets/*",
+      "MpzAlerts/Resources/*"
+    ]
+  },
+  "dependencies": {
+    "SwiftEntryKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}
