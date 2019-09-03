@@ -18,7 +18,7 @@ extension MpzAlerts {
         var handler : (() -> ())?
         
         
-        init(text : String, image: UIImage?, buttonType : ButtonType, color : UIColor, configs : Configs, handler : (() -> ())?) {
+        public init(text : String, image: UIImage?, buttonType : ButtonType, color : UIColor, configs : Configs, handler : (() -> ())?) {
             self.handler = handler
             self.text = text
             self.config = configs
@@ -29,7 +29,7 @@ extension MpzAlerts {
 
         
         
-        func getButton() -> UIButton {
+        public func getButton() -> UIButton {
             let button = UIButton()
             button.setTitle(self.text, for: .normal)
             button.layer.cornerRadius = config.buttonCornerRadius
