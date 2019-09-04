@@ -21,10 +21,20 @@ extension MpzAlerts {
         @IBOutlet weak var messageLabel: UILabel!
         @IBOutlet weak var buttonStack: UIStackView!
         
-        override func loadViewFromXib() -> UIView{
+        public override init(frame: CGRect) {
+            super.init(frame: frame)
+            initializeView()
+        }
+        
+        public required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+            initializeView()
+        }
+        
+        override open func initializeView() {
             let nib = UINib(nibName: "ImageAlert", bundle: Bundle.init(for: type(of: self)))
             let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-            return view
+            self.view = view
         }
         
         override open func build() {

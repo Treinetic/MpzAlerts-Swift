@@ -71,26 +71,8 @@ open class MpzAlerts : UIView {
         self.configs = configs
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        _viewSetup()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        _viewSetup()
-    }
-    
-    private func _viewSetup() {
-        print("view initialize")
-        view = loadViewFromXib()
-        view.frame = bounds
-        view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
-        addSubview(view)
-    }
-    
-    func loadViewFromXib() -> UIView {
-        return UIView()
+    open func initializeView() {
+        
     }
     
     open func setTitle(_ text : String) -> MpzAlerts {

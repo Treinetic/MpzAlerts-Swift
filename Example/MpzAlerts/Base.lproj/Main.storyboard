@@ -25,24 +25,31 @@
                                 <rect key="frame" x="16" y="70" width="343" height="597"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvw-av-zrX">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="199"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
                                         <state key="normal" title="STD"/>
                                         <connections>
                                             <action selector="std:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZG8-bi-UFh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P9-fw-DfB">
-                                        <rect key="frame" x="0.0" y="199" width="343" height="199"/>
+                                        <rect key="frame" x="0.0" y="149.5" width="343" height="149"/>
                                         <state key="normal" title="Action"/>
                                         <connections>
                                             <action selector="actionAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8sT-TF-Jh8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bow-0m-N6X">
-                                        <rect key="frame" x="0.0" y="398" width="343" height="199"/>
+                                        <rect key="frame" x="0.0" y="298.5" width="343" height="149.5"/>
                                         <state key="normal" title="Image"/>
                                         <connections>
                                             <action selector="imageAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R5b-SN-nZI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egj-AL-sgY">
+                                        <rect key="frame" x="0.0" y="448" width="343" height="149"/>
+                                        <state key="normal" title="Custom"/>
+                                        <connections>
+                                            <action selector="didClickCustom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2p1-ui-9AS"/>
                                         </connections>
                                     </button>
                                 </subviews>

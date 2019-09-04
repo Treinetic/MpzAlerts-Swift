@@ -21,11 +21,20 @@ extension MpzAlerts {
         @IBOutlet weak var containerRightCon: NSLayoutConstraint!
         @IBOutlet weak var containerLeftCon: NSLayoutConstraint!
         
+        public override init(frame: CGRect) {
+            super.init(frame: frame)
+            initializeView()
+        }
         
-        override func loadViewFromXib() -> UIView{
+        public required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+            initializeView()
+        }
+        
+        override open func initializeView() {
             let nib = UINib(nibName: "STDAlertView", bundle: Bundle.init(for: type(of: self)))
             let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-            return view
+            self.view = view
         }
         
         public static func show(title : String, message : String, button : String, handler : (() -> ())?) {

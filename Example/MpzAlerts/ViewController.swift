@@ -51,6 +51,9 @@ class ViewController: UIViewController {
         .show()
         
     }
+    @IBAction func didClickCustom(_ sender: Any) {
+        TestAlertView().show()
+    }
     
     func getPosition() -> MpzAlerts.Position{
         switch seg.selectedSegmentIndex {
@@ -63,6 +66,28 @@ class ViewController: UIViewController {
         default:
             return .center
         }
+    }
+}
+
+import Foundation
+import UIKit
+class TestAlertView : MpzAlerts {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        initializeView()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initializeView()
+    }
+    
+    override func initializeView() {
+        print("view build")
+        let nib = UINib(nibName: "TestAlertView", bundle: Bundle(for: type(of: self)))
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        self.view = view
     }
 }
 

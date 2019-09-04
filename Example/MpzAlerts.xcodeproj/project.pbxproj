@@ -12,6 +12,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		745A9C53231FCEA3001F7412 /* TestAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 745A9C52231FCEA3001F7412 /* TestAlertView.xib */; };
 		D3A16CE8F946050F0CF10D66 /* Pods_MpzAlerts_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548344FC3D40ABC5AFFF6A56 /* Pods_MpzAlerts_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		745A9C52231FCEA3001F7412 /* TestAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAlertView.xib; sourceTree = "<group>"; };
 		7985DE068E09AC46C603F420 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A4A342B5C4F20ED4D8FD1980 /* Pods-MpzAlerts_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MpzAlerts_Example.release.xcconfig"; path = "Target Support Files/Pods-MpzAlerts_Example/Pods-MpzAlerts_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ECB98C4E91E2F75DB65E0D9F /* Pods-MpzAlerts_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MpzAlerts_Tests.release.xcconfig"; path = "Target Support Files/Pods-MpzAlerts_Tests/Pods-MpzAlerts_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				745A9C52231FCEA3001F7412 /* TestAlertView.xib */,
 			);
 			name = "Example for MpzAlerts";
 			path = MpzAlerts;
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				745A9C53231FCEA3001F7412 /* TestAlertView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
