@@ -34,9 +34,11 @@ open class MpzAlerts : UIView {
         public var dimColor : UIColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.7)
         public var cornerRadius = CGFloat(0)
         public var titleAlign : NSTextAlignment = .left
+        public var messageAlign : NSTextAlignment = .left
         public var actionAlertTitleAlign : NSTextAlignment = .center
         public var actionAlertMessageAlign : NSTextAlignment = .center
-        public var messageAlign : NSTextAlignment = .left
+        public var imageAlertTitleAlign : NSTextAlignment = .center
+        public var imageAlertMessageAlign : NSTextAlignment = .center
         public var buttonFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         public var titleFont = UIFont.systemFont(ofSize: 18, weight: .bold)
         public var messageFont = UIFont.systemFont(ofSize: 15, weight: .regular)

@@ -42,6 +42,8 @@ extension MpzAlerts {
             buildTitleLabel(label: self.titleLabel)
             buildMessageLabel(label: self.messageLabel)
             imageView.image = self.image
+            self.titleLabel.textAlignment = self.configs.imageAlertTitleAlign
+            self.messageLabel.textAlignment = self.configs.imageAlertMessageAlign
             buttonStack.subviews.forEach({$0.removeFromSuperview()})
             for button in buttons {
                 let b = ActionAlertButtonView.init(fromAlertButton: button)
