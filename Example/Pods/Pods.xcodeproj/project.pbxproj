@@ -57,6 +57,7 @@
 		74502F77231E657200458E7A /* ActionAlertButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405206FEB6B829E85DCC86E508949D01 /* ActionAlertButtonView.xib */; };
 		74502F78231E67E400458E7A /* STDAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBFDE04D8D83166D252F796E82E33FB6 /* STDAlertView.xib */; };
 		74502F79231E69EB00458E7A /* ImageAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20E313EE00AC5649F6CB8D364F92D5 /* ImageAlert.xib */; };
+		7469D4D22328A6B900650D00 /* Snackbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469D4D12328A6B900650D00 /* Snackbars.swift */; };
 		7685E22C69847235D8E68506876D7407 /* EKNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D972A0705F32F314E7076C61D7ACBA /* EKNoteMessageView.swift */; };
 		77FD85CAFF4BF993062E461B0D259C57 /* EntryCachingHeuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BD9049E637BDB0322941D1EC32EE /* EntryCachingHeuristic.swift */; };
 		7A6B397C084DF1636CE6C30F365A4E18 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2EFAE133ED8C7DA7ABAF1E1F5397B /* UIView+QLContentWrap.swift */; };
@@ -209,6 +210,7 @@
 		728E1B83D0E3B268266CD3C265FE220B /* EKAttributes+DisplayMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EKAttributes+DisplayMode.swift"; path = "Source/Model/EntryAttributes/EKAttributes+DisplayMode.swift"; sourceTree = "<group>"; };
 		73A97E90EBB78B2A862D8280ECD479E7 /* SwiftEntryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftEntryKit-dummy.m"; sourceTree = "<group>"; };
 		73DDA3473E46E13EC5AEB58F543D2480 /* EKRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EKRootViewController.swift; path = Source/Infra/EKRootViewController.swift; sourceTree = "<group>"; };
+		7469D4D12328A6B900650D00 /* Snackbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Snackbars.swift; path = MpzAlerts/Classes/Snackbars.swift; sourceTree = "<group>"; };
 		7487741CF5AC895BB2A6F69F4293662E /* QuickLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickLayout.xcconfig; sourceTree = "<group>"; };
 		74B7F72851032BC4239F56FCE1200300 /* SwiftEntryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftEntryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BC5DBBC981CAB21B354AAF222458B0 /* Pods_MpzAlerts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MpzAlerts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				6B37F0692E176632DC0EF847682D7C39 /* ActionAlertButtonView.swift */,
+				7469D4D12328A6B900650D00 /* Snackbars.swift */,
 				9AEB067EA9BF7A88C4B3656C608F913C /* ActionAlert.swift */,
 				7F4D10FEA736D383208888E1778E2E4E /* ActionButton.swift */,
 				7B93DBBD58361051737356678B4974EA /* ImageAlert.swift */,
@@ -886,6 +889,7 @@
 			files = (
 				54A1117C43DD230EF945E5A1E37E9BE1 /* ActionAlertButtonView.swift in Sources */,
 				360335BEFCAECF6FD32D5E9C001FF258 /* ActionAlert.swift in Sources */,
+				7469D4D22328A6B900650D00 /* Snackbars.swift in Sources */,
 				8A41903152E73FDFBC215BD6DFBFA761 /* ActionButton.swift in Sources */,
 				48164A48DBC07928CE7F4B264B6AF267 /* ImageAlert.swift in Sources */,
 				257D7744D5D666ABA5E29B45186D595A /* MpzAlerts-dummy.m in Sources */,

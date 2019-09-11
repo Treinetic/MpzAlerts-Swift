@@ -55,6 +55,10 @@ open class MpzAlerts : UIView {
         public var exitAnimation : EKAttributes.Animation = .init( translate: .none,
                                                                    scale: .init(from: 1, to: 0.5, duration: 0.2),
                                                                    fade: .init(from: 1, to: 0, duration: 0.2))
+        
+        
+        public var snackBarBackgroundColor = UIColor(red:0.20, green:0.20, blue:0.20, alpha:1.0)
+        public var snackBarTextColor = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1.0)
 
         public static var defaultConfigs = Configs()
     }

@@ -67,6 +67,11 @@ class ViewController: UIViewController {
             return .center
         }
     }
+    @IBAction func snackbar(_ sender: Any) {
+        MpzAlerts.Snackbar.show(message: "this is snack bar")
+    }
+    
+    
 }
 
 import Foundation
