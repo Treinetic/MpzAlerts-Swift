@@ -15,11 +15,11 @@ extension MpzAlerts {
         @IBOutlet weak var datePicker: UIDatePicker!
         @IBOutlet weak var titleLabel: UILabel!
         
-        var minDate : Date?
-        var maxDate : Date?
-        var locale : Locale?
-        var value : Date?
-        var mode : UIDatePicker.Mode = .date
+        public var minDate : Date?
+        public var maxDate : Date?
+        public var locale : Locale?
+        public var value : Date?
+        public var mode : UIDatePicker.Mode = .date
         
         public override init(frame: CGRect) {
             super.init(frame: frame)
