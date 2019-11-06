@@ -39,6 +39,7 @@ open class MpzAlerts : UIView {
         public var actionAlertMessageAlign : NSTextAlignment = .center
         public var imageAlertTitleAlign : NSTextAlignment = .center
         public var imageAlertMessageAlign : NSTextAlignment = .center
+        public var datePickerAlertTitleAlign : NSTextAlignment = .center
         public var buttonFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         public var titleFont = UIFont.systemFont(ofSize: 18, weight: .bold)
         public var messageFont = UIFont.systemFont(ofSize: 15, weight: .regular)

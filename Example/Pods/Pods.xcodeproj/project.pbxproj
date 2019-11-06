@@ -58,6 +58,8 @@
 		74502F78231E67E400458E7A /* STDAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBFDE04D8D83166D252F796E82E33FB6 /* STDAlertView.xib */; };
 		74502F79231E69EB00458E7A /* ImageAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A20E313EE00AC5649F6CB8D364F92D5 /* ImageAlert.xib */; };
 		7469D4D22328A6B900650D00 /* Snackbars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7469D4D12328A6B900650D00 /* Snackbars.swift */; };
+		74804B4F23728A0400BE37DD /* DatePickerAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74804B4E23728A0400BE37DD /* DatePickerAlert.xib */; };
+		74804B5123728A1F00BE37DD /* DatePickerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74804B5023728A1F00BE37DD /* DatePickerAlert.swift */; };
 		7685E22C69847235D8E68506876D7407 /* EKNoteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D972A0705F32F314E7076C61D7ACBA /* EKNoteMessageView.swift */; };
 		77FD85CAFF4BF993062E461B0D259C57 /* EntryCachingHeuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C0BD9049E637BDB0322941D1EC32EE /* EntryCachingHeuristic.swift */; };
 		7A6B397C084DF1636CE6C30F365A4E18 /* UIView+QLContentWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A2EFAE133ED8C7DA7ABAF1E1F5397B /* UIView+QLContentWrap.swift */; };
@@ -211,6 +213,8 @@
 		73A97E90EBB78B2A862D8280ECD479E7 /* SwiftEntryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftEntryKit-dummy.m"; sourceTree = "<group>"; };
 		73DDA3473E46E13EC5AEB58F543D2480 /* EKRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EKRootViewController.swift; path = Source/Infra/EKRootViewController.swift; sourceTree = "<group>"; };
 		7469D4D12328A6B900650D00 /* Snackbars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Snackbars.swift; path = MpzAlerts/Classes/Snackbars.swift; sourceTree = "<group>"; };
+		74804B4E23728A0400BE37DD /* DatePickerAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DatePickerAlert.xib; path = MpzAlerts/Resources/DatePickerAlert.xib; sourceTree = "<group>"; };
+		74804B5023728A1F00BE37DD /* DatePickerAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePickerAlert.swift; path = MpzAlerts/Classes/DatePickerAlert.swift; sourceTree = "<group>"; };
 		7487741CF5AC895BB2A6F69F4293662E /* QuickLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickLayout.xcconfig; sourceTree = "<group>"; };
 		74B7F72851032BC4239F56FCE1200300 /* SwiftEntryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftEntryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BC5DBBC981CAB21B354AAF222458B0 /* Pods_MpzAlerts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MpzAlerts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -447,6 +451,7 @@
 				9AEB067EA9BF7A88C4B3656C608F913C /* ActionAlert.swift */,
 				7F4D10FEA736D383208888E1778E2E4E /* ActionButton.swift */,
 				7B93DBBD58361051737356678B4974EA /* ImageAlert.swift */,
+				74804B5023728A1F00BE37DD /* DatePickerAlert.swift */,
 				B12399F3ACCB8CCCFB9B2DEBC6484BFA /* MpzAlerts.swift */,
 				47D8085DABCB06ACBDF9016CD9428258 /* STDAlert.swift */,
 				5C55DA470A5A1106839FD86F0D29B519 /* Pod */,
@@ -464,6 +469,7 @@
 				E256E2F0D0D9FA31FE46CF07DF9E84DB /* ActionAlertView.xib */,
 				4A20E313EE00AC5649F6CB8D364F92D5 /* ImageAlert.xib */,
 				DBFDE04D8D83166D252F796E82E33FB6 /* STDAlertView.xib */,
+				74804B4E23728A0400BE37DD /* DatePickerAlert.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -762,6 +768,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74804B4F23728A0400BE37DD /* DatePickerAlert.xib in Resources */,
 				74502F79231E69EB00458E7A /* ImageAlert.xib in Resources */,
 				0DFD0A4DDA9B07F63E802D0922C9DAA0 /* MpzAlerts.bundle in Resources */,
 				74502F77231E657200458E7A /* ActionAlertButtonView.xib in Resources */,
@@ -895,6 +902,7 @@
 				257D7744D5D666ABA5E29B45186D595A /* MpzAlerts-dummy.m in Sources */,
 				25AE80397F24ECC05707C19A25BDEADD /* MpzAlerts.swift in Sources */,
 				3FCE7B025176F56BFAD1A3F474AC0A6B /* STDAlert.swift in Sources */,
+				74804B5123728A1F00BE37DD /* DatePickerAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

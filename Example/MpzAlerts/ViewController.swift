@@ -55,6 +55,14 @@ class ViewController: UIViewController {
         TestAlertView().show()
     }
     
+    @IBAction func dateAlert(_ sender: Any) {
+         MpzAlerts.Configs.defaultConfigs.position = getPosition()
+        MpzAlerts.DatePickerAlert()
+        .setTitle("Pick a Date")
+        .addButton("Done", handler: {})
+        .show()
+    }
+    
     func getPosition() -> MpzAlerts.Position{
         switch seg.selectedSegmentIndex {
         case 0:
