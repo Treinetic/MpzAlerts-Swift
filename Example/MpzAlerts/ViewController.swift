@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         let al = MpzAlerts.ActionAlert()
         .setTitle("title")
         .setMessage("Dispose of any resources that can be recreated")
-        .addButton("print", handler: {})
-        .addButton("No print", handler: {})
-        .addButton("No image", image: nil, handler: {})
+        .addButton("Dispose of any resources that can be  Dispose of any resources that can be ", handler: {})
+        .addButton("Dispose of any resources that can be ", handler: {})
+        .addButton("No image Dispose of any resources that can be Dispose of any resources that can be ", image: nil, handler: {})
         al.configs.tapToHide = true
         al.show()
         
