@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,14 +36,14 @@
                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1xp-NK-2t2">
-                            <rect key="frame" x="16" y="82.5" width="559" height="161.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1xp-NK-2t2">
+                            <rect key="frame" x="16" y="90.5" width="559" height="153.5"/>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="pLx-Z9-iTh" firstAttribute="leading" secondItem="oi7-TY-1wW" secondAttribute="leading" constant="16" id="5ku-Yc-pKf"/>
-                        <constraint firstItem="1xp-NK-2t2" firstAttribute="top" secondItem="pLx-Z9-iTh" secondAttribute="bottom" constant="8" id="C2m-Za-7gi"/>
+                        <constraint firstItem="1xp-NK-2t2" firstAttribute="top" secondItem="pLx-Z9-iTh" secondAttribute="bottom" constant="16" id="C2m-Za-7gi"/>
                         <constraint firstItem="MGS-gC-djF" firstAttribute="top" secondItem="NPv-67-ew1" secondAttribute="top" constant="16" id="MUd-BC-Tp0"/>
                         <constraint firstItem="1xp-NK-2t2" firstAttribute="leading" secondItem="oi7-TY-1wW" secondAttribute="leading" constant="16" id="Nak-ES-4CK"/>
                         <constraint firstAttribute="trailing" secondItem="1xp-NK-2t2" secondAttribute="trailing" constant="16" id="Uqk-Nv-EJ4"/>
