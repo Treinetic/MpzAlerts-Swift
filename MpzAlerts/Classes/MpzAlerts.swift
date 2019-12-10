@@ -78,6 +78,12 @@ open class MpzAlerts : UIView {
         self.configs = configs
     }
     
+    public convenience init(withView view : UIView, configs : MpzAlerts.Configs = MpzAlerts.Configs.defaultConfigs) {
+        self.init()
+        self.configs = configs
+        self.view = view
+    }
+    
     open func initializeView() {
         
     }

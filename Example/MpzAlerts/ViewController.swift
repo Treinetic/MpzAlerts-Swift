@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func didClickCustom(_ sender: Any) {
-        TestAlertView().show()
+        MpzAlerts.init(withView: TestAlertView())
     }
     
     @IBAction func dateAlert(_ sender: Any) {
