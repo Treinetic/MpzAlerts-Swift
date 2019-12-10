@@ -52,7 +52,9 @@ class ViewController: UIViewController {
         
     }
     @IBAction func didClickCustom(_ sender: Any) {
-        MpzAlerts.init(withView: TestAlertView())
+        var x = MpzAlerts.Configs.defaultConfigs
+        x.verticalPadding = 50
+        MpzAlerts.init(withView: TestAlertView(), configs: x).show()
     }
     
     @IBAction func dateAlert(_ sender: Any) {
@@ -84,23 +86,27 @@ class ViewController: UIViewController {
 
 import Foundation
 import UIKit
-class TestAlertView : MpzAlerts {
+import Foundation
+import UIKit
+class TestAlertView : UIView {
+    var view : UIView!
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        initializeView()
+        setupXib()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        initializeView()
+        setupXib()
     }
     
-    override func initializeView() {
-        print("view build")
-        let nib = UINib(nibName: "TestAlertView", bundle: Bundle(for: type(of: self)))
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        self.view = view
+    private func setupXib() {
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: Bundle.init(for: type(of: self)))
+        self.view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView
+        self.view.frame = bounds
+        self.view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
+        addSubview(self.view)
     }
 }
 

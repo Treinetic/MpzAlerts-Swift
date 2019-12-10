@@ -47,8 +47,10 @@ open class MpzAlerts : UIView {
         public var position : Position = .center
         public var buttonPosition: Position = .right
         public var actionAlertButtonPosition: Position = .center
-        public var padding = CGFloat(20)
+        public var horizontalPadding = CGFloat(20)
+        public var verticalPadding : CGFloat?
         public var maxWidth = CGFloat(400)
+        public var maxHeight = CGFloat(Int.max)
         public var tapToHide = true
         public var entranceAnimation : EKAttributes.Animation = .init( translate: .none,
                                                                        scale: .init(from: 0.5, to: 1, duration: 0.2),
@@ -145,10 +147,14 @@ open class MpzAlerts : UIView {
         ekAttributes.entryInteraction = .forward
         ekAttributes.scroll = .disabled
         if configs.position != .bottom && configs.position != .top {
+            var heightConstrain = EKAttributes.PositionConstraints.Edge.intrinsic
+            if let verticalPadding = self.configs.verticalPadding {
+                heightConstrain = .offset(value: verticalPadding)
+            }
             ekAttributes.positionConstraints = .init(
                 verticalOffset: 0,
-                size: .init(width: .offset(value: self.configs.padding), height: .intrinsic),
-                maxSize: .init(width: .constant(value: self.configs.maxWidth), height: .intrinsic)
+                size: .init(width: .offset(value: self.configs.horizontalPadding), height: heightConstrain),
+                maxSize: .init(width: .constant(value: self.configs.maxWidth), height: .constant(value: self.configs.maxHeight))
             )
         }
         ekAttributes.positionConstraints.safeArea = .overridden
