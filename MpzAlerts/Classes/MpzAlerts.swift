@@ -51,6 +51,7 @@ open class MpzAlerts : UIView {
         public var verticalPadding : CGFloat?
         public var maxWidth = CGFloat(400)
         public var maxHeight = CGFloat(Int.max)
+        public var height : CGFloat?
         public var tapToHide = true
         public var entranceAnimation : EKAttributes.Animation = .init( translate: .none,
                                                                        scale: .init(from: 0.5, to: 1, duration: 0.2),
@@ -150,6 +151,9 @@ open class MpzAlerts : UIView {
             var heightConstrain = EKAttributes.PositionConstraints.Edge.intrinsic
             if let verticalPadding = self.configs.verticalPadding {
                 heightConstrain = .offset(value: verticalPadding)
+            }
+            if let fixedHeight = self.configs.height {
+                heightConstrain = .constant(value: fixedHeight)
             }
             ekAttributes.positionConstraints = .init(
                 verticalOffset: 0,
