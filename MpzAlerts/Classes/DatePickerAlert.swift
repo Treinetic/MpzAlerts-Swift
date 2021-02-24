@@ -75,6 +75,9 @@ extension MpzAlerts {
         }
         
         private func setupDatePicler() {
+            if #available(iOS 13.4, *) {
+                datePicker.preferredDatePickerStyle = .wheels
+            }
             datePicker.minimumDate = self.minDate
             datePicker.maximumDate = self.maxDate
             datePicker.date = self.value ?? Date()
